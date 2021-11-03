@@ -81,6 +81,13 @@ body {
     background-color: #f2fbff;
 }
 
+.circle-green {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #0c9688;
+}
+
 .link-notifiche {
     color: rgb(87, 87, 87)!important;
 }
