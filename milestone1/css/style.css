@@ -4,24 +4,57 @@ body {
     position: relative;
 }
 
-.bg-green-bar {
-    background-color: #0c9688;
-    min-height: 100px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
+/* MY Utility */
 
 .my-container {
     background-color: brown;
     height: calc(100vh - 32px)
 }
 
-.orange-bg {
-    background-color: coral;
+.my-w-12 {
+    width: 12%;
+}
+
+.my-row-padding {
+    padding: 0;
+}
+
+.nav-icons {
+    color: rgb(119, 119, 119);
+}
+
+.my-element {
+    height: 70px;
+    background-color: #cfcfcf;
+    width: 100%;
+}
+
+
+/****************/
+.bg-green-bar {
+    background-color: #0c9688;
+    min-height: 120px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 .purple-bg {
     background-color: rgb(140, 20, 220);
+}
+
+.blue-bg {
+    background-color: #8fdaf9;
+}
+
+.my-blue {
+    color: #8fdaf9;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #f2fbff;
 }
