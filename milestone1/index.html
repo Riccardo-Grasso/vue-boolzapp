@@ -61,17 +61,17 @@
 
                 <div class="contact-container flex-grow-1 my-3 me-3 border-end">
 
-                    <div class="border-top p-2 d-flex">
-                        <img src="img/avatar_1.jpg" alt="user-img" class="rounded-circle my-w-20">
+                    <div class="border-top p-2 d-flex" v-for="friend in chat">
+                        <img :src="friend.avatar" :alt="friend.name" class="rounded-circle my-w-20">
                         <div class="ms-3 w-75">
                             <div class="d-flex justify-content-between">
-                                <h5>Michele</h5>
+                                <h5>{{friend.name}}</h5>
                                 <p>10/01/2020 16:15:22</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="border-top p-2 d-flex">
+                    <!-- <div class="border-top p-2 d-flex">
                         <img src="img/avatar_io.jpg" alt="user-img" class="rounded-circle my-w-20">
                         <div class="ms-3 w-75">
                             <div class="d-flex justify-content-between">
@@ -99,7 +99,7 @@
                                 <p>10/01/2020 16:15:22</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>

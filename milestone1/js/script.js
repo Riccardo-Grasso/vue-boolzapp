@@ -5,20 +5,20 @@ const app = new Vue({
     data: {
         chat: [
             {
-                nome: "Michele",
-                img: "img/avatar_1.jpg"
+                name: 'Michele',
+                avatar: 'img/avatar_1.jpg'
             },
             {
-                nome: "Giulia",
-                img: "img/avatar_io.jpg"
+                name: 'Giulia',
+                avatar: 'img/avatar_io.jpg'
             },
             {
-                nome: "Sara",
-                img: "img/avatar_6.jpg"
+                name: 'Sara',
+                avatar: 'img/avatar_6.jpg'
             },
             {
-                nome: "Daniele",
-                img: "img/avatar_5.jpg"
+                name: 'Daniele',
+                avatar: 'img/avatar_5.jpg'
             }
         ]
     }
