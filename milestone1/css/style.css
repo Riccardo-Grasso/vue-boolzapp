@@ -13,7 +13,15 @@ body {
     z-index: -1;
 }
 
-.main-container {
+.my-container {
     background-color: brown;
     height: calc(100vh - 32px)
+}
+
+.orange-bg {
+    background-color: coral;
+}
+
+.purple-bg {
+    background-color: rgb(140, 20, 220);
 }
