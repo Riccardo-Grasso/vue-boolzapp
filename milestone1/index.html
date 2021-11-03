@@ -22,17 +22,23 @@
     <!-- main container -->
     <section class="container my-container">
         <div class="row h-100">
-            <!-- Colonna sinistra -->
-            <div class="col-4 orange-bg d-flex flex-column  my-row-padding h-100">
 
-                <div class="my-element d-flex align-items-center p-2 my-flex-shrink ">
-                    <img src="img/avatar_2.jpg" alt="user-img" class="rounded-circle my-w-12">
-                    <span class="flex-grow-1 fw-bold ps-2">Nome Utente</span>
-                    <span class="justify-self-end fs-4 nav-icons">
+            <!-- Colonna sinistra -->
+            <div class="col-4 orange-bg d-flex flex-column my-row-padding h-100">
+
+                <div class="my-element d-flex align-items-center p-2 my-flex-shrink w-100">
+                    <div class="my-w-15">
+                        <img src="img/avatar_2.jpg" alt="user-img" class="rounded-circle img-user">
+                    </div>
+                    <div class="flex-grow-1">
+                        <span class="fw-bold ps-2">Nome Utente</span>
+                    </div>
+
+                    <div class="justify-self-end fs-4 nav-icons">
                         <i class="fas fa-circle-notch "></i>
                         <i class="fas fa-comment-alt px-2"></i>
                         <i class="fas fa-ellipsis-v px-2"></i>
-                    </span>
+                    </div>
                 </div>
 
                 <div class="my-element blue-bg d-flex align-items-center p-3 my-flex-shrink ">
@@ -98,17 +104,39 @@
                 </div>
             </div>
 
-            <div class="col-8 img-bg my-row-padding border-start">
-                <div class="my-element d-flex align-items-center p-2">
+            <!-- Colonna destra -->
+            <div class="col-8 d-flex flex-column my-row-padding border-start">
 
-                    <span class="flex-grow-1 fw-bold ps-2">Nome Utente</span>
-                    <span class="justify-self-end fs-4 nav-icons">
-                        <i class="fas fa-search"></i>
-                        <i class="fas fa-paperclip"></i>
+                <!-- Nav -->
+                <div class="my-element d-flex align-items-center p-2 my-flex-shrink w-100">
+                    <div class="my-w-15">
+                        <img src="img/avatar_1.jpg" alt="user-img" class="rounded-circle img-user">
+                    </div>
+
+                    <div class="flex-grow-1 h-100">
+                        <div class="ms-3 w-75">
+                            <div class="d-flex flex-column">
+                                <h5>Michele</h5>
+                                <span>Ultimo accesso oggi alle 10/01/2020 16:15:22</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="justify-self-end fs-4 nav-icons">
+                        <i class="fas fa-circle-notch "></i>
+                        <i class="fas fa-comment-alt px-2"></i>
                         <i class="fas fa-ellipsis-v px-2"></i>
-                    </span>
+                    </div>
+                </div>
+
+                <div class="img-bg flex-grow-1 me-3"></div>
+
+                <div class="send-message-nav my-flex-shrink">
+
                 </div>
             </div>
+
+
         </div>
     </section>
 
