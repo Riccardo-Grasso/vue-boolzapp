@@ -41,7 +41,7 @@ body {
 
 .my-element {
     height: 70px;
-    background-color: #cfcfcf;
+    background-color: #EAEAEA;
     width: 100%;
 }
 
@@ -96,4 +96,22 @@ body {
 .send-message-nav {
     height: 70px;
     background-color: #f3eeea;
+}
+
+.message-sent {
+    background-color: #d5f9be;
+    width: 35%;
+    align-self: flex-end;
+}
+
+.message-received {
+    background-color: white;
+    width: 35%;
+    align-self: flex-start;
+}
+
+.message-time {
+    font-size: 12px!important;
+    color: rgb(175, 175, 175)!important;
+    text-align: right;
 }
