@@ -1,0 +1,19 @@
+body {
+    background: rgb(221,219,210);
+    background: linear-gradient(180deg, rgba(221,219,210,1) 80%, rgba(12,150,136,0.16) 100%); 
+    position: relative;
+}
+
+.bg-green-bar {
+    background-color: #0c9688;
+    min-height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.main-container {
+    background-color: brown;
+    height: calc(100vh - 32px)
+}
