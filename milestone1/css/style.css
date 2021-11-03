@@ -19,6 +19,11 @@ body {
     padding: 0;
 }
 
+.my-w-20 {
+    width: 20%;
+}
+
+
 .my-p-margin {
     margin: 0 auto;
 }
@@ -48,7 +53,7 @@ body {
     z-index: -1;
 }
 
-.purple-bg {
+.img-bg {
     background-image: url(../img/mine.jpg);
 }
 
@@ -73,11 +78,10 @@ body {
 
 .input-container {
     position: relative;
+    height: 55px;
 }
 
-/* .input-container i {
-    position: absolute;
-    top: 18px;
-    left: 20px;
-    color: rgb(87, 87, 87)!important;
-} */
+.contact-container {
+    height: 100%;
+    overflow-y: auto;
+}
