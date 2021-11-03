@@ -7,7 +7,7 @@ body {
 /* MY Utility */
 
 .my-container {
-    background-color: brown;
+    background-color: #fafafa;
     height: calc(100vh - 32px)
 }
 
@@ -19,6 +19,10 @@ body {
     padding: 0;
 }
 
+.my-p-margin {
+    margin: 0 auto;
+}
+
 .nav-icons {
     color: rgb(119, 119, 119);
 }
@@ -27,6 +31,10 @@ body {
     height: 70px;
     background-color: #cfcfcf;
     width: 100%;
+}
+
+.my-flex-shrink {
+    flex-shrink: 0;
 }
 
 
@@ -41,7 +49,7 @@ body {
 }
 
 .purple-bg {
-    background-color: rgb(140, 20, 220);
+    background-image: url(../img/mine.jpg);
 }
 
 .blue-bg {
@@ -58,3 +66,18 @@ body {
     border-radius: 50%;
     background-color: #f2fbff;
 }
+
+.link-notifiche {
+    color: rgb(87, 87, 87)!important;
+}
+
+.input-container {
+    position: relative;
+}
+
+/* .input-container i {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    color: rgb(87, 87, 87)!important;
+} */
