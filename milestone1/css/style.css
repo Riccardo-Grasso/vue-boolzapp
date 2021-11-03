@@ -102,13 +102,15 @@ body {
 
 .message-sent {
     background-color: #d5f9be;
-    width: 35%;
+    min-width: 35%;
+    max-width: 48%;
     align-self: flex-end;
 }
 
 .message-received {
     background-color: white;
-    width: 35%;
+    min-width: 35%;
+    max-width: 48%;
     align-self: flex-start;
 }
 
