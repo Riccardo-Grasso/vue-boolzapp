@@ -137,7 +137,7 @@ const app = new Vue({
 
             this.active.messages.push({
                 text: mess,
-                timestamp: this.data(),
+                timestamp: this.myDateTime(),
                 status: "sent"
             });
 
@@ -157,19 +157,18 @@ const app = new Vue({
         messaggioRisposta() {
             this.active.messages.push({
                 text: "ok",
-                timestamp: this.data(),
+                timestamp: this.myDateTime(),
                 status: "received"
             });
         },
 
-        data() {
+        myDateTime() {
             let today = new Date();
-            let dd = String(today.getDate()).padStart(2, '0');
-            let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-            let yyyy = today.getFullYear();
+            let date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
+            let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            let dateTime = date + ' ' + time;
 
-            today = dd + '/' + mm + '/' + yyyy;
-            return today;
+            return dateTime;
         }
     },
 });
