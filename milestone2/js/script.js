@@ -100,7 +100,8 @@ const app = new Vue({
             }
         ],
         active: {},
-        nuovoMessaggio: ""
+        nuovoMessaggio: "",
+        myUltimoAccesso: ""
     },
     methods: {
         attivaChat: function (chatAttiva) {
@@ -160,7 +161,10 @@ const app = new Vue({
                 timestamp: this.myDateTime(),
                 status: "received"
             });
+            this.myUltimoAccesso = this.myDateTime();
         },
+
+
 
         myDateTime() {
             let today = new Date();
