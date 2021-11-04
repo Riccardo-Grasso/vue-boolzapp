@@ -24,7 +24,8 @@
         <div class="row h-100">
 
             <!-- Colonna sinistra -->
-            <div class="col-4 orange-bg d-flex flex-column my-row-padding h-100">
+            <div class="orange-bg d-flex flex-column my-row-padding h-100 border-end"
+                :class="lunghezzaObj(active) !== 0 ? 'col-4' : 'col-12'">
 
                 <div class="my-element d-flex align-items-center p-2 my-flex-shrink w-100">
                     <div class="my-w-15">
@@ -79,7 +80,7 @@
             </div>
 
             <!-- Colonna destra -->
-            <div class="col-8 d-flex flex-column my-row-padding border-start h-100" v-if="lunghezzaObj(active) !== 0">
+            <div class="col-8 d-flex flex-column my-row-padding h-100" v-if="lunghezzaObj(active) !== 0">
 
                 <!-- Nav top-->
                 <div class="my-element d-flex align-items-center p-2 my-flex-shrink w-100">
