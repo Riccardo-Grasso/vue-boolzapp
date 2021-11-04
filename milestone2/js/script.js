@@ -134,7 +134,24 @@ const app = new Vue({
             });
 
             this.nuovoMessaggio = "";
-        },
-    }
 
+            setTimeout(() => {
+                // push del messaggio nell'array dei messaggi
+                this.messaggioRisposta();
+            }, this.numeroRandom(1000, 3000));
+        },
+
+        numeroRandom(min, max) {
+            const rand = Math.floor(Math.random() * (max - min + 1) + min);
+            return rand;
+        },
+
+        messaggioRisposta() {
+            this.active.messages.push({
+                text: "ok",
+                timestamp: "10/01/2020 15:30:55",
+                status: "received"
+            });
+        }
+    },
 });
