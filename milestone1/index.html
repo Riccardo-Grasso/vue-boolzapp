@@ -75,36 +75,6 @@
                         </div>
                     </div>
 
-                    <!-- <div class="border-top p-2 d-flex">
-                        <img src="img/avatar_io.jpg" alt="user-img" class="rounded-circle my-w-20">
-                        <div class="ms-3 w-75">
-                            <div class="d-flex justify-content-between">
-                                <h5>Giulia</h5>
-                                <p>10/01/2020 16:15:22</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border-top p-2 d-flex">
-                        <img src="img/avatar_6.jpg" alt="user-img" class="rounded-circle my-w-20">
-                        <div class="ms-3 w-75">
-                            <div class="d-flex justify-content-between">
-                                <h5>Sara</h5>
-                                <p>10/01/2020 16:15:22</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="border-top p-2 d-flex">
-                        <img src="img/avatar_5.jpg" alt="user-img" class="rounded-circle my-w-20">
-                        <div class="ms-3 w-75">
-                            <div class="d-flex justify-content-between">
-                                <h5>Daniele</h5>
-                                <p>10/01/2020 16:15:22</p>
-                            </div>
-                        </div>
-                    </div> -->
-
                 </div>
             </div>
 
@@ -135,23 +105,13 @@
 
 
                 <!-- BOX MESSAGGI -->
-                <div class="img-bg d-flex flex-column flex-grow-1 py-3 px-5 me-3" v-for="singleChat in chat">
+                <div class="img-bg d-flex flex-column flex-grow-1 py-3 px-5 me-3">
 
-                    <!-- <div class="rounded-3 mb-2 p-2" v-for="singleMessage in singleChat.messages"
+                    <div class="rounded-3 mb-2 p-2" v-for="singleMessage in active.messages"
                         :class="singleMessage.status == `sent` ? 'message-sent' : 'message-received'">
                         <p class="my-p-margin">{{singleMessage.text}}</p>
                         <p class="fs-6 message-time my-p-margin">{{singleMessage.timestamp}}</p>
-                    </div> -->
-
-                    <!-- <div class="message-sent rounded-3 mb-2 p-2">
-                        <p class="my-p-margin">Ricordati di farlo mangiare!</p>
-                        <p class="fs-6 message-time my-p-margin">10/01/2020 15:30:55</p>
                     </div>
-
-                    <div class="message-received rounded-3 mb-2 p-2">
-                        <p class="my-p-margin">Tutto fatto!</p>
-                        <p class="fs-6 message-time my-p-margin">10/01/2020 15:30:55</p>
-                    </div> -->
 
                 </div>
 
