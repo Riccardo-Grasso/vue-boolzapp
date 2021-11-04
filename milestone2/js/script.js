@@ -106,6 +106,10 @@ const app = new Vue({
     methods: {
         attivaChat: function (chatAttiva) {
             this.active = chatAttiva;
+
+            let receivedMessages = chatAttiva.messages.filter(el => el.status == "received");
+            console.log(receivedMessages);
+            this.myUltimoAccesso = receivedMessages[receivedMessages.length - 1].timestamp;
         },
 
         ultimoMessaggio(messages) {
