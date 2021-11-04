@@ -65,7 +65,7 @@
                     <div class="border-top p-2 d-flex align-items-center" v-for="friend in chat"
                         @click="attivaChat(friend)">
                         <img :src="friend.avatar" :alt="friend.name" class="rounded-circle img-avatar-height ">
-                        <div class="ms-3 w-75">
+                        <div class="ms-3 w-100">
                             <div class="d-flex justify-content-between">
                                 <div class="mt-2">
                                     <h5 class="my-p-margin">{{friend.name}}</h5>
@@ -86,7 +86,7 @@
                 <!-- Nav top-->
                 <div class="my-element d-flex align-items-center p-2 my-flex-shrink w-100">
                     <div class="my-w-15">
-                        <img src="img/avatar_1.jpg" alt="user-img" class="rounded-circle img-user">
+                        <img :src="active.avatar" alt="user-img" class="rounded-circle img-user">
                     </div>
 
                     <div class="flex-grow-1 h-100">
