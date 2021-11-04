@@ -98,6 +98,12 @@ const app = new Vue({
                     },
                 ]
             }
-        ]
+        ],
+        active: {}
+    },
+    methods: {
+        attivaChat: function (chatAttiva) {
+            this.active = chatAttiva;
+        }
     }
 });

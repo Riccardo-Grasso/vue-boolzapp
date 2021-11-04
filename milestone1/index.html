@@ -61,7 +61,7 @@
 
                 <div class="contact-container flex-grow-1 my-3 me-3 border-end">
 
-                    <div class="border-top p-2 d-flex" v-for="friend in chat">
+                    <div class="border-top p-2 d-flex" v-for="friend in chat" @click="attivaChat(friend)">
                         <img :src="friend.avatar" :alt="friend.name" class="rounded-circle my-w-20">
                         <div class="ms-3 w-75">
                             <div class="d-flex justify-content-between">
