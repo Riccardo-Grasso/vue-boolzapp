@@ -127,10 +127,12 @@
 
                     <div class="flex-grow-1">
                         <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="Username"
-                            aria-describedby="basic-addon1" style="height: 50px;">
+                            aria-describedby="basic-addon1" style="height: 50px;" v-model="nuovoMessaggio"
+                            @keyup.enter="pushNuovoMessaggio">
                     </div>
 
-                    <div class="my-w-12 d-flex justify-content-center align-items-center circle-green mx-2">
+                    <div class="my-w-12 d-flex justify-content-center align-items-center circle-green mx-2"
+                        @click="pushNuovoMessaggio">
                         <i class="fas fa-paper-plane fs-5" style="color: white;"></i>
                     </div>
 

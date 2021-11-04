@@ -100,6 +100,7 @@ const app = new Vue({
             }
         ],
         active: {},
+        nuovoMessaggio: ""
     },
     methods: {
         attivaChat: function (chatAttiva) {
@@ -117,6 +118,23 @@ const app = new Vue({
         lunghezzaObj(active) {
             length = Object.keys(active).length;
             return length;
-        }
+        },
+
+        pushNuovoMessaggio() {
+            const mess = this.nuovoMessaggio.trim();
+
+            if (mess === "") {
+                return;
+            }
+
+            this.active.messages.push({
+                text: mess,
+                timestamp: "10/01/2020 15:30:55",
+                status: "sent"
+            });
+
+            this.nuovoMessaggio = "";
+        },
     }
+
 });
