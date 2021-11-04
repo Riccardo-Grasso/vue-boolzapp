@@ -10,17 +10,17 @@ const app = new Vue({
                 messages: [
                     {
                         text: "Hai portato a spasso il cane?",
-                        timestamp: "10/01/2020 15:30:55",
+                        timestamp: "04/11/2021 15:30:55",
                         status: "sent"
                     },
                     {
                         text: "Ricordati di farlo mangiare!",
-                        timestamp: "10/01/2020 15:31:25",
+                        timestamp: "04/11/2021 15:31:25",
                         status: "sent"
                     },
                     {
                         text: "Tutto fatto!",
-                        timestamp: "10/01/2020 16:01:45",
+                        timestamp: "04/11/2021 16:01:45",
                         status: "received"
                     },
                 ]
@@ -33,13 +33,13 @@ const app = new Vue({
                 messages: [
                     {
                         text: "Hey ciao! Come va?",
-                        timestamp: "10/01/2020 15:30:55",
+                        timestamp: "03/11/2021 09:30:55",
                         status: "sent"
                     },
 
                     {
                         text: "Tutto bene! A te?",
-                        timestamp: "10/01/2020 16:01:45",
+                        timestamp: "03/11/2021 11:01:45",
                         status: "received"
                     },
                 ]
@@ -51,22 +51,22 @@ const app = new Vue({
                 messages: [
                     {
                         text: "A che ora inizia il film questa sera?",
-                        timestamp: "10/01/2020 16:01:45",
+                        timestamp: "03/11/2021 16:01:45",
                         status: "received"
                     },
                     {
                         text: "21:30",
-                        timestamp: "10/01/2020 15:30:55",
+                        timestamp: "03/11/2021 16:30:55",
                         status: "sent"
                     },
                     {
                         text: "NON FARE TARDI!!!",
-                        timestamp: "10/01/2020 15:31:25",
+                        timestamp: "03/11/2021 16:31:25",
                         status: "sent"
                     },
                     {
                         text: "Ok ok lol",
-                        timestamp: "10/01/2020 16:01:45",
+                        timestamp: "03/11/2021 16:35:45",
                         status: "received"
                     },
                 ]
@@ -78,22 +78,22 @@ const app = new Vue({
                 messages: [
                     {
                         text: "Oi!",
-                        timestamp: "10/01/2020 16:01:45",
+                        timestamp: "02/11/2021 21:01:45",
                         status: "received"
                     },
                     {
                         text: "Sei online?",
-                        timestamp: "10/01/2020 16:01:45",
+                        timestamp: "02/11/2021 21:02:02",
                         status: "received"
                     },
                     {
                         text: "Arrivo tra 5 minuti",
-                        timestamp: "10/01/2020 15:30:55",
+                        timestamp: "02/11/2021 21:03:55",
                         status: "sent"
                     },
                     {
                         text: "Ti aspetto",
-                        timestamp: "10/01/2020 16:01:45",
+                        timestamp: "02/11/2021 21:04:45",
                         status: "received"
                     },
                 ]
@@ -115,6 +115,14 @@ const app = new Vue({
             return messaggio; //.slice(0, 20)
         },
 
+        ultimoAccesso(messages) {
+            if (messages.length === 0) {
+                return "";
+            }
+            const accesso = messages[messages.length - 1].timestamp;
+            return accesso; //.slice(0, 20)
+        },
+
         lunghezzaObj(active) {
             length = Object.keys(active).length;
             return length;
@@ -129,7 +137,7 @@ const app = new Vue({
 
             this.active.messages.push({
                 text: mess,
-                timestamp: "10/01/2020 15:30:55",
+                timestamp: this.data(),
                 status: "sent"
             });
 
@@ -155,10 +163,10 @@ const app = new Vue({
         },
 
         data() {
-            const today = new Date();
-            const dd = String(today.getDate()).padStart(2, '0');
-            const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-            const yyyy = today.getFullYear();
+            let today = new Date();
+            let dd = String(today.getDate()).padStart(2, '0');
+            let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            let yyyy = today.getFullYear();
 
             today = dd + '/' + mm + '/' + yyyy;
             return today;
