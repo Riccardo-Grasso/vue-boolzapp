@@ -65,7 +65,11 @@
                         <img :src="friend.avatar" :alt="friend.name" class="rounded-circle my-w-20">
                         <div class="ms-3 w-75">
                             <div class="d-flex justify-content-between">
-                                <h5>{{friend.name}}</h5>
+                                <div class="mt-2">
+                                    <h5 class="my-p-margin">{{friend.name}}</h5>
+                                    <small class="nav-icons">{{ ultimoMessaggio(friend.messages) }}</small>
+                                </div>
+
                                 <p>10/01/2020 16:15:22</p>
                             </div>
                         </div>
@@ -133,11 +137,11 @@
                 <!-- BOX MESSAGGI -->
                 <div class="img-bg d-flex flex-column flex-grow-1 py-3 px-5 me-3" v-for="singleChat in chat">
 
-                    <div class="rounded-3 mb-2 p-2" v-for="singleMessage in singleChat.messages"
+                    <!-- <div class="rounded-3 mb-2 p-2" v-for="singleMessage in singleChat.messages"
                         :class="singleMessage.status == `sent` ? 'message-sent' : 'message-received'">
                         <p class="my-p-margin">{{singleMessage.text}}</p>
                         <p class="fs-6 message-time my-p-margin">{{singleMessage.timestamp}}</p>
-                    </div>
+                    </div> -->
 
                     <!-- <div class="message-sent rounded-3 mb-2 p-2">
                         <p class="my-p-margin">Ricordati di farlo mangiare!</p>

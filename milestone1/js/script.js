@@ -104,6 +104,17 @@ const app = new Vue({
     methods: {
         attivaChat: function (chatAttiva) {
             this.active = chatAttiva;
-        }
+        },
+
+        ultimoMessaggio(messages) {
+
+            if (messages.length === 0) {
+                return "";
+            }
+
+            const messaggio = messages[messages.length - 1].text;
+
+            return messaggio; //.slice(0, 20)
+        },
     }
 });
