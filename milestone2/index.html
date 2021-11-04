@@ -27,7 +27,7 @@
             <div class="orange-bg d-flex flex-column my-row-padding h-100 border-end"
                 :class="lunghezzaObj(active) !== 0 ? 'col-4' : 'col-12'">
 
-                <div class="my-element d-flex align-items-center p-2 my-flex-shrink w-100">
+                <div class="my-element d-flex align-items-center p-2 my-flex-shrink w-100 align-items-center">
                     <div class="my-w-15">
                         <img src="img/avatar_2.jpg" alt="user-img" class="rounded-circle img-user">
                     </div>
@@ -62,8 +62,9 @@
 
                 <div class="contact-container flex-grow-1 my-3 me-3 border-end">
 
-                    <div class="border-top p-2 d-flex" v-for="friend in chat" @click="attivaChat(friend)">
-                        <img :src="friend.avatar" :alt="friend.name" class="rounded-circle my-w-20">
+                    <div class="border-top p-2 d-flex align-items-center" v-for="friend in chat"
+                        @click="attivaChat(friend)">
+                        <img :src="friend.avatar" :alt="friend.name" class="rounded-circle img-avatar-height ">
                         <div class="ms-3 w-75">
                             <div class="d-flex justify-content-between">
                                 <div class="mt-2">

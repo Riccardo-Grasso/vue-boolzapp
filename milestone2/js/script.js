@@ -14,7 +14,7 @@ const app = new Vue({
                         status: "sent"
                     },
                     {
-                        text: "Hai portato a spasso il cane?",
+                        text: "Ricordati di farlo mangiare!",
                         timestamp: "10/01/2020 15:31:25",
                         status: "sent"
                     },
@@ -38,7 +38,7 @@ const app = new Vue({
                     },
 
                     {
-                        text: "Tutto tutto bene! A te?",
+                        text: "Tutto bene! A te?",
                         timestamp: "10/01/2020 16:01:45",
                         status: "received"
                     },

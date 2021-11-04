@@ -23,6 +23,10 @@ body {
     width: 20%;
 }
 
+.img-avatar-height {
+    height: 70px;
+}
+
 .my-w-15 {
     width: 64px;
 }
