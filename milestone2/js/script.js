@@ -99,7 +99,7 @@ const app = new Vue({
                 ]
             }
         ],
-        active: {}
+        active: {},
     },
     methods: {
         attivaChat: function (chatAttiva) {
@@ -113,5 +113,10 @@ const app = new Vue({
             const messaggio = messages[messages.length - 1].text;
             return messaggio; //.slice(0, 20)
         },
+
+        lunghezzaObj(active) {
+            length = Object.keys(active).length;
+            return length;
+        }
     }
 });

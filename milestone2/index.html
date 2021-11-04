@@ -79,7 +79,7 @@
             </div>
 
             <!-- Colonna destra -->
-            <div class="col-8 d-flex flex-column my-row-padding border-start h-100">
+            <div class="col-8 d-flex flex-column my-row-padding border-start h-100" v-if="lunghezzaObj(active) !== 0">
 
                 <!-- Nav top-->
                 <div class="my-element d-flex align-items-center p-2 my-flex-shrink w-100">
@@ -90,7 +90,7 @@
                     <div class="flex-grow-1 h-100">
                         <div class="ms-3 w-75">
                             <div class="d-flex flex-column">
-                                <h5>Michele</h5>
+                                <h5>{{active.name}}</h5>
                                 <span>Ultimo accesso oggi alle 10/01/2020 16:15:22</span>
                             </div>
                         </div>
