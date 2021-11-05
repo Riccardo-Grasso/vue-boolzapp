@@ -132,3 +132,26 @@ body {
     color: rgb(175, 175, 175)!important;
     text-align: right;
 }
+
+.input-btn {
+    border-left: transparent;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.my-lens-btn {
+    background-color: white;
+    color: gray;
+    border: 1px solid #ced4da!important;
+    border-right: 0!important;
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: lightgray;
+    outline: 0;
+    box-shadow: none;
+}
