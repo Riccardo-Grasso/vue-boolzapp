@@ -171,11 +171,20 @@ body {
 .mydrop {
     position: absolute;
     top: 0;
-    right: -25px;
+    right: 5px;
 } 
 
 .time-absolute {
     position: absolute;
-    bottom: 0;
+    bottom: 1;
     right: 5px;
+}
+
+.myBtnPadding {
+    padding: 5px 0 5px 10px;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem transparent;
 }

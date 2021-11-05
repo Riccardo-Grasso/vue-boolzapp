@@ -181,5 +181,14 @@ const app = new Vue({
                 return contact.name.toLowerCase().includes(this.myFilter.toLowerCase().trim());
             });
         },
+
+        deleteMessage(index) {
+            this.active.messages.splice(index, 1);
+        },
+
+        anteprimaChat(string) {
+            let miaStringa = string;
+            miaStringa.slice(0, 10);
+        }
     },
 });
