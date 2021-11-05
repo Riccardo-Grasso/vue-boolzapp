@@ -170,10 +170,7 @@ const app = new Vue({
         },
 
         myDateTime() {
-            let today = new Date();
-            let date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
-            let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-            let dateTime = date + ' ' + time;
+            let dateTime = dayjs().format("DD/MM/YYYY HH:mm:ss");
 
             return dateTime;
         },
