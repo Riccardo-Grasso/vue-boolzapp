@@ -90,6 +90,7 @@ body {
     width: 40px;
     border-radius: 50%;
     background-color: #0c9688;
+    position: relative;
 }
 
 .link-notifiche {
@@ -187,4 +188,10 @@ body {
 .btn:focus {
     outline: 0;
     box-shadow: 0 0 0 0.25rem transparent;
+}
+.center-paper-icon {
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 8px;
 }
