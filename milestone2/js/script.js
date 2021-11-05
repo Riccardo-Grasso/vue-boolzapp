@@ -188,7 +188,15 @@ const app = new Vue({
 
         anteprimaChat(string) {
             let miaStringa = string;
-            miaStringa.slice(0, 10);
+
+            if (miaStringa.length <= 5) {
+                return miaStringa;
+            } else {
+
+                let stringaRidotta = miaStringa.slice(0, 8);
+                let anteprima = stringaRidotta + "...";
+                return anteprima;
+            }
         }
     },
 });
