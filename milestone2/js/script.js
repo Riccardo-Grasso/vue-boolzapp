@@ -102,7 +102,8 @@ const app = new Vue({
         active: {},
         nuovoMessaggio: "",
         myUltimoAccesso: "",
-        myFilter: ""
+        myFilter: "",
+        activeBg: false
     },
     methods: {
         attivaChat: function (chatAttiva) {
@@ -179,6 +180,6 @@ const app = new Vue({
             return this.chat.filter(contact => {
                 return contact.name.toLowerCase().includes(this.myFilter.toLowerCase().trim());
             });
-        }
+        },
     },
 });

@@ -64,8 +64,8 @@
                 <!-- contenitore contatti -->
                 <div class="contact-container flex-grow-1 my-3 me-3 border-end">
 
-                    <div class="border-top p-2 d-flex align-items-center" v-for="friend in filterChat()"
-                        @click="attivaChat(friend)">
+                    <div class="border-top p-2 d-flex align-items-center color-hover" v-for="friend in filterChat()"
+                        @click="attivaChat(friend)" :class="friend === active ? 'active-chat-bg' : '' ">
                         <img :src="friend.avatar" :alt="friend.name" class="rounded-circle img-avatar-height ">
                         <div class="ms-3 w-100">
                             <div class="d-flex justify-content-between">

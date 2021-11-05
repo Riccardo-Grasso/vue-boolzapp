@@ -155,3 +155,11 @@ body {
     outline: 0;
     box-shadow: none;
 }
+
+.color-hover:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.active-chat-bg {
+    background-color: #e7e4e4!important;
+}
