@@ -53,6 +53,9 @@ body {
     flex-shrink: 0;
 }
 
+.my-h5-margin {
+    margin: 0.1rem 0;
+}
 
 /****************/
 .bg-green-bar {
