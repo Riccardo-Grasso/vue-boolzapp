@@ -116,6 +116,7 @@ body {
     min-width: 35%;
     max-width: 48%;
     align-self: flex-end;
+    overflow-wrap: break-word;
 }
 
 .message-received {
@@ -123,6 +124,7 @@ body {
     min-width: 35%;
     max-width: 48%;
     align-self: flex-start;
+    overflow-wrap: break-word;
 }
 
 .message-time {

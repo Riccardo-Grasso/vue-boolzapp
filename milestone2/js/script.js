@@ -101,7 +101,8 @@ const app = new Vue({
         ],
         active: {},
         nuovoMessaggio: "",
-        myUltimoAccesso: ""
+        myUltimoAccesso: "",
+        myFilter: ""
     },
     methods: {
         attivaChat: function (chatAttiva) {
@@ -168,8 +169,6 @@ const app = new Vue({
             this.myUltimoAccesso = this.myDateTime();
         },
 
-
-
         myDateTime() {
             let today = new Date();
             let date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
@@ -177,6 +176,12 @@ const app = new Vue({
             let dateTime = date + ' ' + time;
 
             return dateTime;
+        },
+
+        filterChat() {
+            return this.chat.filter(contact => {
+                return contact.name.toLowerCase().includes(this.myFilter.toLowerCase().trim());
+            });
         }
     },
 });
