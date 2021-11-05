@@ -163,3 +163,19 @@ body {
 .active-chat-bg {
     background-color: #e7e4e4!important;
 }
+
+.dropContainer {
+    position: relative;
+}
+
+.mydrop {
+    position: absolute;
+    top: 0;
+    right: -25px;
+} 
+
+.time-absolute {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
